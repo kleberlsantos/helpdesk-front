@@ -5,7 +5,7 @@
             <a mat-list-item routerLink="home">
                 <i class="material-icons">home</i>Home
             </a>
-            <a mat-list-item routerLink="/">
+            <a mat-list-item routerLink="tecnico">
                 <i class="material-icons">account_circle</i>Técnicos
             </a>
             <a mat-list-item routerLink="/">
@@ -20,12 +20,13 @@
         </mat-nav-list>
 
     </mat-drawer>
-  
+
     <div class="sidenav-content">
-      <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
-        <mat-icon>menu</mat-icon>
-      </button>
-      <router-outlet></router-outlet>
+        <app-header></app-header>
+        <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <router-outlet></router-outlet>
     </div>
-  
-  </mat-drawer-container>
+
+</mat-drawer-container>
