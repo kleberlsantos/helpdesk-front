@@ -10,35 +10,35 @@ import { TecnicoService } from 'src/app/services/tecnico.service';
   styleUrls: ['./tecnico-list.component.css']
 })
 export class TecnicoListComponent implements OnInit {
-/*
-  ELEMENT_DATA:Tecnico[]=[{
-    id: 1,
-    nome: "kleber",
-    cpf: "123",
-    email: "k@mail",
-    senha: "123",
-    perfis: ['0'],
-    dataCriacao: "28/11/2022"
-  }];
-  */
-  ELEMENT_DATA:Tecnico[]=[];
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol','acoes'];
+  /*
+    ELEMENT_DATA:Tecnico[]=[{
+      id: 1,
+      nome: "kleber",
+      cpf: "123",
+      email: "k@mail",
+      senha: "123",
+      perfis: ['0'],
+      dataCriacao: "28/11/2022"
+    }];
+    */
+  ELEMENT_DATA: Tecnico[] = [];
+  displayedColumns: string[] = ['id', 'nome', 'cpf', 'email', 'acoes'];
   dataSource = new MatTableDataSource<Tecnico>(this.ELEMENT_DATA);
 
-  constructor(private service:TecnicoService) { }
+  constructor(private service: TecnicoService) { }
 
   ngOnInit(): void {
     this.findAll();
   }
-  
+
   @ViewChild(MatPaginator) paginator: MatPaginator;
-/*
-  ngAfterViewInit() {
-  }
-*/
-  findAll(){
-    this.service.findAll().subscribe(resposta =>{
-      this.ELEMENT_DATA=resposta;
+  /*
+    ngAfterViewInit() {
+    }
+  */
+  findAll() {
+    this.service.findAll().subscribe(resposta => {
+      this.ELEMENT_DATA = resposta;
       this.dataSource = new MatTableDataSource<Tecnico>(this.ELEMENT_DATA);
       this.dataSource.paginator = this.paginator;
     })
