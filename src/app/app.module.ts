@@ -41,11 +41,15 @@ import { LoginComponent } from './components/login/login.component';
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { NgxMaskModule } from 'ngx-mask';
+import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
+import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
 @NgModule({
   declarations: [ 
     AppComponent, NavComponent, HomeComponent, HeaderComponent, 
     TecnicoListComponent,TecnicoCreateComponent,
-    LoginComponent, 
+    LoginComponent,
+    TecnicoUpdateComponent,
+    TecnicoDeleteComponent, 
   ],
   imports: [
     BrowserModule,
