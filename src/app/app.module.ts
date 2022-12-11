@@ -33,30 +33,38 @@ import { MatCardModule } from '@angular/material/card';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
-import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
-import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
+
 import { LoginComponent } from './components/login/login.component';
 
+import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
+import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
+import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
+import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
+
+import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
+import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
+import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
+import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
 //
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { NgxMaskModule } from 'ngx-mask';
-import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
-import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
 @NgModule({
-  declarations: [ 
-    AppComponent, NavComponent, HomeComponent, HeaderComponent, 
-    TecnicoListComponent,TecnicoCreateComponent,
+  declarations: [
+    AppComponent, NavComponent, HomeComponent, HeaderComponent,
+
     LoginComponent,
-    TecnicoUpdateComponent,
-    TecnicoDeleteComponent, 
+
+    TecnicoListComponent, TecnicoCreateComponent, TecnicoUpdateComponent, TecnicoDeleteComponent,
+
+    ClienteListComponent, ClienteCreateComponent, ClienteUpdateComponent,ClienteDeleteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-      
+
     // Forms
     FormsModule,
     ReactiveFormsModule,
@@ -76,7 +84,7 @@ import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecn
     MatTableModule,
     MatIconModule,
     MatListModule,
-    MatCardModule ,    
+    MatCardModule,
     ToastrModule.forRoot({
       timeOut: 4000,
       closeButton: true,
