@@ -1,0 +1,25 @@
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+  }
+
+  mat-form-field{
+    width: 100%;
+  }
+
+  .edit{
+    color: rgb(100, 100, 240);
+  }
+
+  .delete{
+    color: rgb(247, 139, 139);
+  }
+
+  mat-radio-group {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+  }

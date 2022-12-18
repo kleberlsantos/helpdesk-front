@@ -25,13 +25,14 @@ export class ClienteListComponent implements OnInit {
   displayedColumns: string[] = ['id', 'nome', 'cpf', 'email', 'acoes'];
   dataSource = new MatTableDataSource<Cliente>(this.ELEMENT_DATA);
 
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+  
   constructor(private service: ClienteService) { }
 
   ngOnInit(): void {
     this.findAll();
   }
 
-  @ViewChild(MatPaginator) paginator: MatPaginator;
   /*
     ngAfterViewInit() {
     }

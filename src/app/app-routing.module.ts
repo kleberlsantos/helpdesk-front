@@ -12,11 +12,12 @@ import { ClienteCreateComponent } from './components/cliente/cliente-create/clie
 import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
 import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
 import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
+import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
 
 const routes: Routes = [
-  {path:"login",component:LoginComponent},
+  { path: "login", component: LoginComponent },
   {
-    path: "", component: NavComponent, canActivate:[AuthGuard],
+    path: "", component: NavComponent, canActivate: [AuthGuard],
     children: [
       { path: "home", component: HomeComponent },
 
@@ -28,7 +29,9 @@ const routes: Routes = [
       { path: "cliente", component: ClienteListComponent },
       { path: "cliente/create", component: ClienteCreateComponent },
       { path: "cliente/update/:id", component: ClienteUpdateComponent },
-      { path: "cliente/delete/:id", component: ClienteDeleteComponent }
+      { path: "cliente/delete/:id", component: ClienteDeleteComponent },
+
+      { path: "chamados", component: ChamadoListComponent }
     ]
   }
 ];

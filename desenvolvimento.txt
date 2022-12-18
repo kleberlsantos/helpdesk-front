@@ -1,0 +1,176 @@
+** Extensão VS Code
+>>> Color Highlight   (permite escolher as cores no css)
+
+Criação projeto angular
+
+** Instalações iniciais ao aplicar SO
+
+> sudo apt update
+sudo apt upgrade
+  sudo apt install nodejs npm
+ 
+  sudo npm cache clean -f
+  sudo npm install -g n
+  sudo n stable
+  node –version 
+
+  hash -r
+
+** Instalar angular / cli
+
+1) npm install -g @angular/cli@12.0.3  // atual => npm install -g @angular/cli
+2) atualizar 
+	 ***npm install -g npm@9.1.2
+	 
+** Desinstatalar npm uninstall -g @angular/cli  
+				  npm cache clean --force
+	npm install -g npm@7.5.6
+	npm install -g node@12.14.1
+
+** Criar aplicação angular 2
+
+> ng n helpdesk-front --minimal
+	cd <pasta>
+	(npm install se precisar instalar modulos que de projetos baixado no git)  
+	ng serve  (*** dividir terminal para ter outra janela para executar outras ações)
+
+	** alterar informação no arquivo tsconfig.json o campo "strict": false,
+	** angular.json "inlineTemplate": false,   // para poder separar os arquivos
+					"inlineStyle": false,
+
+** adicionar  framework Material para angular
+	ng add @angular/material
+
+** adicionar component toaster
+	npm i ngx-toastr@14.0.0 --save  (https://www.npmjs.com/package/ngx-toastr) 
+	
+** criando componente
+> ng g c components/nav     /*onde g = generete c= component */	
+
+** criando service
+> ng g s services/auth     /*onde g = generete s= service */	
+
+** criando active guard
+> ng g guard auth/auth
+
+** adicionar auth0
+	npm  i @auth0/angular-jwt --save
+	
+** criando interceptor
+> ng g interceptor interceptors/auth   
+
+** criando service tecnico
+> ng g s services/tecnico     	
+ 	
+** criando tecnico list
+> ng g c components/tecnico/tecnico-list  
+
+** criando tecnico create
+> ng g c components/tecnico/tecnico-create  
+
+** adicionar ngx-mask
+	npm  i --save ngx-mask@12.0.0
+
+** criando tecnico update
+> ng g c components/tecnico/tecnico-update  
+
+** criando tecnico delete
+> ng g c components/tecnico/tecnico-delete  
+
+** criando chamado list
+> ng g c components/chamado/chamado-list  
+
+***************************************************
+> cd <pasta>
+  npm install
+  npm run dev
+
+*** instalando bootstrap
+
+> sudo npm install bootstrap
+
+*** instalando datables (https://github.com/niiknow/vue-datatables-net)
+
+> npm install vue-datatables-net
+  npm install datatables.net-bs5
+  npm install datatables.net-buttons
+  npm install datatables.net-buttons-bs5
+  npm install datatables.net-select-bs5
+  npm install --save datatables.net-datetime
+  npm install datatables.net-fixedheader
+  npm install datatables.net-rowgroup
+  
+*** instalando SASS (CSS extendido)
+
+> npm add -D sass
+
+*** instalando router ()
+
+> npm i vue-router
+
+*** outros
+npm install vue-multiselect@next
+npm install axios
+
+
+*** verificar
+
+datatables.net-buttons
+
+
+**** deletando pacotes
+
+> npm uninstall <package_name>  (ou)
+  npm uninstall -g <package_name>
+
+//deletar completamente o nodejs e npm
+sudo apt-get uninstall nodejs npm node
+
+sudo apt-get remove nodejs npm node
+sudo apt-get purge nodejs
+
+sudo rm -rf /usr/local/bin/npm 
+sudo rm -rf /usr/local/share/man/man1/node* 
+sudo rm -rf /usr/local/lib/dtrace/node.d
+rm -rf ~/.npm
+rm -rf ~/.node-gyp
+sudo rm -rf /opt/local/bin/node
+sudo rm -rf /opt/local/include/node
+sudo rm -rf /opt/local/lib/node_modules
+sudo rm -rf /usr/local/lib/node*
+sudo rm -rf /usr/local/include/node*
+sudo rm -rf /usr/local/bin/node*
+sudo rm -rf ~/.npm-global
+
+sudo apt-get purge npm
+
+**link uteis
+https://cssgradient.io/
+
+***** links
+https://matheuslao.dev/posts/personalizando-local-instalacao-distro-linux-wsl2/
+
+https://quasar.dev/
+https://icons.getbootstrap.com/
+https://sass-lang.com/
+
+https://github.com/shentao/vue-multiselect/tree/next
+https://vue-multiselect.js.org/
+https://colorlib.com/wp/free-vuejs-admin-template/
+https://demo.dashboardpack.com/architectui-vue-free/#/elements/buttons-standard
+https://www.youtube.com/c/Freecodecamp/videos
+
+
+
+https://towardsdatascience.com/increase-your-productivity-with-vscode-snippets-6055c6fa7b4f
+
+172.30.67.79
+https://docs.microsoft.com/pt-br/windows/wsl/setup/environment
+https://docs.microsoft.com/pt-br/windows/wsl/use-custom-distro
+
+https://www.youtube.com/watch?v=Ul4KOXNQJSk&t=425s  (criação sidebar)
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_div_test   (div scroll)
+
+
+
+

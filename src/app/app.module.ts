@@ -49,6 +49,7 @@ import { ClienteDeleteComponent } from './components/cliente/cliente-delete/clie
 import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { NgxMaskModule } from 'ngx-mask';
+import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
 @NgModule({
   declarations: [
     AppComponent, NavComponent, HomeComponent, HeaderComponent,
@@ -57,7 +58,7 @@ import { NgxMaskModule } from 'ngx-mask';
 
     TecnicoListComponent, TecnicoCreateComponent, TecnicoUpdateComponent, TecnicoDeleteComponent,
 
-    ClienteListComponent, ClienteCreateComponent, ClienteUpdateComponent,ClienteDeleteComponent
+    ClienteListComponent, ClienteCreateComponent, ClienteUpdateComponent,ClienteDeleteComponent, ChamadoListComponent
   ],
   imports: [
     BrowserModule,
