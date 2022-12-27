@@ -50,6 +50,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { NgxMaskModule } from 'ngx-mask';
 import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
+import { ChamadoCreateComponent } from './components/chamado/chamado-create/chamado-create.component';
 @NgModule({
   declarations: [
     AppComponent, NavComponent, HomeComponent, HeaderComponent,
@@ -58,7 +59,7 @@ import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-
 
     TecnicoListComponent, TecnicoCreateComponent, TecnicoUpdateComponent, TecnicoDeleteComponent,
 
-    ClienteListComponent, ClienteCreateComponent, ClienteUpdateComponent,ClienteDeleteComponent, ChamadoListComponent
+    ClienteListComponent, ClienteCreateComponent, ClienteUpdateComponent,ClienteDeleteComponent, ChamadoListComponent, ChamadoCreateComponent
   ],
   imports: [
     BrowserModule,

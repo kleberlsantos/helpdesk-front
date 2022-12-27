@@ -78,7 +78,13 @@ sudo apt upgrade
 > ng g c components/tecnico/tecnico-delete  
 
 ** criando chamado list
-> ng g c components/chamado/chamado-list  
+> ng g c components/chamado/chamado-list   
+
+** criando servico chamado
+> ng g s services/chamado  
+
+** criando chamado create
+> ng g c components/chamado/chamado-create 
 
 ***************************************************
 > cd <pasta>
