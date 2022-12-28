@@ -51,6 +51,8 @@ import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
 import { NgxMaskModule } from 'ngx-mask';
 import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
 import { ChamadoCreateComponent } from './components/chamado/chamado-create/chamado-create.component';
+import { ChamadoUpdateComponent } from './components/chamado/chamado-update/chamado-update.component';
+import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-read.component';
 @NgModule({
   declarations: [
     AppComponent, NavComponent, HomeComponent, HeaderComponent,
@@ -59,7 +61,7 @@ import { ChamadoCreateComponent } from './components/chamado/chamado-create/cham
 
     TecnicoListComponent, TecnicoCreateComponent, TecnicoUpdateComponent, TecnicoDeleteComponent,
 
-    ClienteListComponent, ClienteCreateComponent, ClienteUpdateComponent,ClienteDeleteComponent, ChamadoListComponent, ChamadoCreateComponent
+    ClienteListComponent, ClienteCreateComponent, ClienteUpdateComponent,ClienteDeleteComponent, ChamadoListComponent, ChamadoCreateComponent, ChamadoUpdateComponent, ChamadoReadComponent
   ],
   imports: [
     BrowserModule,

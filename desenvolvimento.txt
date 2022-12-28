@@ -85,6 +85,8 @@ sudo apt upgrade
 
 ** criando chamado create
 > ng g c components/chamado/chamado-create 
+  ng g c components/chamado/chamado-update 
+  ng g c components/chamado/chamado-read
 
 ***************************************************
 > cd <pasta>
